@@ -1,6 +1,7 @@
 @use "../helpers/variables" as *;
 
 .head-with-border {
+  position: relative;
   h2 {
     text-align: center;
     background-color: $mainColor;

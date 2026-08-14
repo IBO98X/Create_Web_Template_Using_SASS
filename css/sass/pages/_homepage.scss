@@ -47,13 +47,21 @@
 /* Start Services */
 .services {
   .service-box {
-    float: $float-left;
-    width: (100% / 3);
+    @media #{$minMedium} {
+      float: $float-left;
+      width: (100% / 3);
 
-    &:not(:last-of-type) {
-      padding-right: 20px;
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
     }
 
+    @media #{$maxMobile} {
+      i {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
     .service-title {
       color: #666;
 
@@ -76,3 +84,87 @@
   }
 }
 /* End Services */
+
+/* Start Our Players */
+.our-players {
+  .player-box {
+    @media #{$minSmall} {
+      float: $float-left;
+      width: (100% / 2);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    @media #{$minMedium} {
+      width: (100% / 3);
+      text-align: $text-left;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media #{$minLarge} {
+      width: (100% / 5);
+    }
+
+    @media #{$maxMobile} {
+      margin-bottom: 40px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+    }
+
+    .player-title {
+      color: #666;
+      font-weight: normal;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .player-desc {
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .link {
+      color: $mainColor;
+      text-decoration: none;
+    }
+  }
+}
+/* End Our Players */
+
+/* Start Lorem */
+.lorem-ipsum {
+  .lorem-box {
+    float: $float-left;
+    width: (91% / 3);
+    margin-bottom: 50px;
+
+    &:not(:last-of-type) {
+      margin-right: 3%;
+    }
+
+    .lorem-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+  }
+}
+/* End Lorem */
