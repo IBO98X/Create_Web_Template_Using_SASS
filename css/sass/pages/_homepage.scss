@@ -1,0 +1,78 @@
+@use "../helpers/variables" as *;
+
+/* Start Slider */
+
+.slider {
+  blockquote {
+    font: {
+      size: 20px;
+      style: italic;
+      weight: bold;
+      family: Tahoma, Arial;
+    }
+    line-height: 1.7;
+    text-align: center;
+    color: #5e5e5e;
+    width: 80%;
+    margin: 30px auto;
+  }
+  img {
+    width: 100%;
+  }
+  .bullets {
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $greyColor;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border: 3px solid $greyColor;
+      cursor: pointer;
+      &.active,
+      &:hover {
+        background-color: white;
+        border: 3px solid #333;
+      }
+    }
+  }
+}
+
+/* End Slider */
+
+/* Start Services */
+.services {
+  .service-box {
+    float: $float-left;
+    width: (100% / 3);
+
+    &:not(:last-of-type) {
+      padding-right: 20px;
+    }
+
+    .service-title {
+      color: #666;
+
+      i {
+        font-size: 35px;
+        position: relative;
+        top: 4px;
+      }
+    }
+
+    .service-desc {
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .link {
+      color: $mainColor;
+      text-decoration: none;
+    }
+  }
+}
+/* End Services */

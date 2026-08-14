@@ -1,0 +1,28 @@
+@use "../helpers/variables" as *;
+
+.head-with-border {
+  h2 {
+    text-align: center;
+    background-color: $mainColor;
+    color: #fff;
+    margin: 40px auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 400px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 1.5px;
+      background-color: $greyColor;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -1;
+    }
+  }
+}

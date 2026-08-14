@@ -1,0 +1,13 @@
+@use "../helpers/mixins" as *;
+
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}

@@ -1,0 +1,42 @@
+@use "../helpers/variables" as *;
+
+.header {
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid $greyColor;
+  .logo {
+    width: 30%;
+    float: $float-left;
+    h1 {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    p {
+    }
+  }
+  .navbar {
+    width: 70%;
+    float: $float-left;
+    background-color: $mainColor;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    li {
+      width: 20%;
+      float: $float-left;
+      font-size: 18px;
+      text-align: center;
+      a {
+        display: block;
+        padding: 20px 10px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
